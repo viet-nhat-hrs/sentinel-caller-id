@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy - Sentinel Caller ID</title><meta name="description" content="Privacy Policy for Sentinel Caller ID by viet-nhat-hrs.">
+<style>
+:root{--bg:#fff;--fg:#1c2330;--muted:#5b6678;--line:#dfe4ec;--accent:#1b4fd8;--card:#f5f7fb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141d;--fg:#e6eaf2;--muted:#9aa5b8;--line:#2a3445;--accent:#7aa2ff;--card:#171e2b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header,main,footer{max-width:820px;margin:0 auto;padding:0 16px}
+header{padding-top:28px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+header .app{font-weight:700;color:var(--accent)}nav a{margin-right:16px;font-size:.95rem}
+h1{font-size:1.9rem;line-height:1.25;margin:.6em 0 .3em}h2{font-size:1.25rem;margin:1.8em 0 .5em}h3{font-size:1.05rem}
+a{color:var(--accent)}code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.88em;word-break:break-word}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1em 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--card)}
+li{margin:.25em 0}footer{padding-top:24px;padding-bottom:40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:40px}
+.card{display:block;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:14px 16px;margin:12px 0;text-decoration:none;color:var(--fg)}
+.card strong{display:block;color:var(--accent)}
+</style></head><body>
+<header><div class="app">Sentinel Caller ID</div><nav><a href="../">Home</a><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a></nav></header>
+<main><h1>Privacy Policy</h1>
+<p><strong>App:</strong> Sentinel Caller ID (<code>com.vietnhathrs.callerid.spamblock</code>)<br />
+<strong>Developer:</strong> viet-nhat-hrs<br />
+<strong>Effective date:</strong> October 9, 2026<br />
+<strong>Contact:</strong> tranvancuong07072003@gmail.com</p>
+<p>This Privacy Policy explains what information the Sentinel Caller ID app ("Sentinel", "the App") accesses, what leaves your device, who receives it, and the choices you have. "We", "us" and "our" mean viet-nhat-hrs, the developer of the App.</p>
+<h2>1. Summary</h2>
+<ul>
+<li>Sentinel is a caller ID, spam-blocking and phone (dialer) app. To do that job it works with your <strong>call log, your contacts, incoming-call events and, if you turn on the Unseen tab, the text of message notifications</strong>. This information is processed <strong>on your device</strong>. We do not operate a server that receives it, and we do not sell it.</li>
+<li>The App has <strong>no account, sign-in or registration</strong>.</li>
+<li>The App includes <strong>advertising and measurement software from third parties</strong> (Google AdMob and several ad-network partners, Firebase, Adjust, AppsFlyer and the Meta SDK). These services run on your device and may collect device identifiers (such as the Android advertising ID), app-interaction data, crash data and diagnostics, and may show you ads. Section 5 explains exactly what they receive.</li>
+<li>You control sensitive access (call log, contacts, notification access, default phone app) in your device's system settings, and you can withdraw it at any time.</li>
+</ul>
+<h2>2. Information the App accesses on your device</h2>
+<p>The items below are used to provide the features you see in the App. Unless Section 5 says otherwise, they stay on your device.</p>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Android permission or service</th>
+<th>Why the App uses it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phone state and incoming/outgoing call events</td>
+<td><code>READ_PHONE_STATE</code>, in-call service, <code>MANAGE_OWN_CALLS</code>, <code>ANSWER_PHONE_CALLS</code>, <code>CALL_PHONE</code></td>
+<td>To detect calls, show the incoming-call screen, let you answer, decline, mute, use the keypad or speaker, and place calls you start from the App.</td>
+</tr>
+<tr>
+<td>Call log (numbers, times, call type)</td>
+<td><code>READ_CALL_LOG</code></td>
+<td>To show your call history (all, missed, incoming, outgoing), your recent activity, and to match numbers with caller ID information.</td>
+</tr>
+<tr>
+<td>Contacts (names, numbers)</td>
+<td><code>READ_CONTACTS</code>, <code>WRITE_CONTACTS</code></td>
+<td>To show your contact list, to display the contact name when someone calls, and to save an unknown number as a contact when you choose to.</td>
+</tr>
+<tr>
+<td>Call screening</td>
+<td>Call screening service (<code>BIND_SCREENING_SERVICE</code>)</td>
+<td>To reject calls from numbers on your block list or that you chose to block. The block list is stored on your device.</td>
+</tr>
+<tr>
+<td>Message notification content (Unseen tab)</td>
+<td>Notification access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</td>
+<td>Only if you enable "Notification access" for the App: to read the sender and text preview of notifications from supported chat apps and show them in the Unseen tab without opening the chat app.</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td><code>POST_NOTIFICATIONS</code></td>
+<td>To show spam warnings, call notifications and blocked-call notices.</td>
+</tr>
+<tr>
+<td>Full-screen incoming-call screen, foreground service</td>
+<td><code>USE_FULL_SCREEN_INTENT</code>, <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_PHONE_CALL</code>, <code>WAKE_LOCK</code></td>
+<td>To show the call screen when the phone is locked and keep the call running.</td>
+</tr>
+<tr>
+<td>Network state, internet</td>
+<td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+<td>Used by the advertising, analytics and crash-reporting services described in Section 5.</td>
+</tr>
+</tbody>
+</table>
+<h3>Default phone app</h3>
+<p>Sentinel can act as your <strong>default phone app</strong>. You choose this in a system dialog and can change it at any time in Android Settings. When Sentinel is your default phone app it handles your calls and can use the call log and contacts as described above. These are used for the App's core phone and caller-ID functions only, and are not used for advertising.</p>
+<h3>Call log and contacts</h3>
+<p>Your call log and contacts are read from Android's own databases to display and match information inside the App. We do not copy them to a server of ours, and we do not intentionally include them in analytics events or advertising requests.</p>
+<h3>Notification access and the Unseen tab</h3>
+<p>Notification access is <strong>off by default</strong> and is granted only by you in Android's system settings after the App explains why it is needed. When on, the App reads the notifications that supported chat apps post (sender name, message preview, time) so you can preview messages without marking them as seen. These previews are <strong>stored only on your device</strong> in the App's private storage (up to a limited number of recent messages) and are <strong>not sent to us or to any third party</strong>. You can turn this off at any time by removing the App's notification access in Android Settings; clearing the App's storage or uninstalling the App deletes the stored previews. The App does not read the notifications of apps it does not support.</p>
+<h3>Spam number database</h3>
+<p>The App ships with an <strong>offline database of reported spam numbers</strong>, loaded from a file inside the App. Checking whether a number looks like spam happens on your device and <strong>does not upload the number you are checking</strong>. The database is based on the open-source CallShield data set (MIT license).</p>
+<h2>3. Information we do not collect</h2>
+<ul>
+<li>We do not collect your name, e-mail address, password or any account details: the App has no account.</li>
+<li>We do not collect your precise or approximate location, photos, videos, files, microphone or camera data, or SMS messages (the App does not request SMS permissions).</li>
+<li>We do not upload your call log, your contacts, your block list or your Unseen message previews to a server operated by us.</li>
+</ul>
+<h2>4. How we use information</h2>
+<ul>
+<li>To provide caller ID, call screening, the dialer and the Unseen tab (all on your device).</li>
+<li>To show advertising and measure its performance.</li>
+<li>To understand how the App is used, find and fix crashes, and improve stability.</li>
+<li>To measure which marketing sources lead to installs (attribution).</li>
+<li>To comply with law and protect our rights.</li>
+</ul>
+<h2>5. Third-party services built into the App</h2>
+<p>The App includes software development kits (SDKs) from the companies below. They run inside the App on your device, send information to their own servers, and process it under their own privacy policies. We list them so you can see who may receive data. The App itself does not enter your call log, contacts or Unseen previews into these services.</p>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Service</th>
+<th>What it may collect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advertising</td>
+<td><strong>Google AdMob</strong> (Google Mobile Ads SDK)</td>
+<td>Advertising ID, device and app information, IP address, approximate region derived from IP, ad interactions. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></td>
+</tr>
+<tr>
+<td>Advertising (mediation partners that may serve or bid on ads through AdMob)</td>
+<td><strong>AppLovin</strong>, <strong>Liftoff (Vungle)</strong>, <strong>Meta Audience Network</strong>, <strong>Mintegral</strong>, <strong>Unity Ads</strong>, <strong>Pangle</strong></td>
+<td>Advertising ID, device and network information, IP address, ad interactions. <a href="https://www.applovin.com/privacy/">AppLovin</a> · <a href="https://liftoff.io/privacy-policy/">Liftoff</a> · <a href="https://www.facebook.com/privacy/policy/">Meta</a> · <a href="https://www.mintegral.com/en/privacy/">Mintegral</a> · <a href="https://unity.com/legal/privacy-policy">Unity</a> · <a href="https://www.pangleglobal.com/privacy">Pangle</a></td>
+</tr>
+<tr>
+<td>Consent</td>
+<td><strong>Google User Messaging Platform (UMP)</strong></td>
+<td>Stores your consent choices for advertising where required (for example in the EEA and the UK).</td>
+</tr>
+<tr>
+<td>Analytics and configuration</td>
+<td><strong>Firebase Analytics, Firebase Remote Config</strong></td>
+<td>App instance ID, device and app information, usage events such as screens or features used and app-start information. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></td>
+</tr>
+<tr>
+<td>Crash reporting</td>
+<td><strong>Firebase Crashlytics</strong></td>
+<td>Crash and error reports, device model, OS version, app version and diagnostic state at the time of the crash.</td>
+</tr>
+<tr>
+<td>Install attribution and measurement</td>
+<td><strong>Adjust</strong>, <strong>AppsFlyer</strong> (including ad-revenue measurement), <strong>Meta SDK</strong> (app events and advertiser ID collection), Google Play Install Referrer</td>
+<td>Advertising ID, install-referrer information, device and app information, IP address, app events and ad-revenue events. <a href="https://www.adjust.com/terms/privacy-policy/">Adjust</a> · <a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Advertising ID.</strong> The App can access the Android advertising ID (Google Play Services <code>AD_ID</code> permission) and related Android Privacy Sandbox advertising permissions. You can reset your advertising ID or opt out of ads personalization in Android Settings (Settings &gt; Privacy &gt; Ads, or Google &gt; Ads). Where the law requires, the App asks for your consent before using these identifiers for personalized advertising.</p>
+<p><strong>Sharing.</strong> The data in the table above is collected by these third parties directly from your device and is shared with them for advertising, analytics, crash reporting and attribution. We do not sell your call log, contacts, notification content or block list. We may disclose information if required by law or to protect our rights.</p>
+<h2>6. Data storage, backup and retention</h2>
+<ul>
+<li>App data (settings, block list, Unseen previews, local caches) is kept in the App's private storage on your device until you delete it, clear the App's data or uninstall the App.</li>
+<li>Because the App allows Android's standard backup, your device's backup service may copy some App data to your Google account if you have device backup turned on. This is controlled by your device and Google settings, and we do not have access to those backups.</li>
+<li>Data held by third-party SDKs follows each provider's own retention rules.</li>
+<li>Data is encrypted in transit: the App does not allow unencrypted (cleartext) network traffic.</li>
+<li>Because we do not hold your data on a server, we cannot look up, export or delete it for you. See Section 7.</li>
+</ul>
+<h2>7. Your choices and rights</h2>
+<ul>
+<li><strong>Permissions:</strong> you can grant or revoke call log, contacts, phone, notification and notification-access permissions at any time in Android Settings &gt; Apps &gt; Sentinel Caller ID &gt; Permissions (and Settings &gt; Notifications &gt; Notification access).</li>
+<li><strong>Default phone app:</strong> change it in Android Settings &gt; Apps &gt; Default apps &gt; Phone app.</li>
+<li><strong>Block list:</strong> remove numbers from the block list inside the App.</li>
+<li><strong>Ads:</strong> reset your advertising ID or opt out of ads personalization in your device settings, and use the consent options the App shows where applicable.</li>
+<li><strong>Delete your data:</strong> clear the App's storage or uninstall the App. This removes the data the App holds on your device. To ask a third-party SDK provider about data it holds, use the privacy links in Section 5 or your device's advertising settings.</li>
+<li><strong>Privacy rights:</strong> depending on where you live (for example the EEA, the UK, California), you may have rights to access, correct, delete or object to the processing of personal data, and to lodge a complaint with a data-protection authority. Because we do not keep your data on our own servers, we can only act on identifiers held by us, if any. You can contact us at the address below and we will help or direct you to the right provider.</li>
+</ul>
+<h2>8. International transfers</h2>
+<p>Third-party providers may process data in countries other than yours, including the United States and countries in Asia and Europe. Their transfer safeguards are described in their own privacy policies.</p>
+<h2>9. Children's privacy</h2>
+<p>Sentinel Caller ID is <strong>not directed to children</strong>. It is intended for adults and teenagers who manage their own phone calls. We do not knowingly collect personal information from children under 13 (or under 16 in the EEA and the UK). If you believe a child has provided information through the App, contact us and we will help to resolve it.</p>
+<h2>10. Security</h2>
+<p>We use reasonable measures such as keeping sensitive data in the App's private storage and requiring encrypted network connections. No method of storage or transmission is completely secure.</p>
+<h2>11. Changes to this policy</h2>
+<p>We may update this policy, for example when the App's features or SDKs change. The "Effective date" at the top shows the latest version. Material changes will be reflected in the App or on this page.</p>
+<h2>12. Contact us</h2>
+<p>viet-nhat-hrs<br />
+E-mail: <a href="mailto:tranvancuong07072003@gmail.com">tranvancuong07072003@gmail.com</a></p></main>
+<footer>&copy; 2026 viet-nhat-hrs. Effective 2026-10-09. Contact: <a href="mailto:tranvancuong07072003@gmail.com">tranvancuong07072003@gmail.com</a></footer>
+</body></html>
